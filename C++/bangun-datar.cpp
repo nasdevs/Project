@@ -4,7 +4,7 @@
 #include <unistd.h>
 #define PHI 3.14
 using namespace std;
-
+// Nasrullah, github.com/nasdevs
 void menuBangunDatar() {
     cout << "===========Daftar bangun datar===========" << endl;
     cout << "1. persegi" << endl;
@@ -110,7 +110,7 @@ int main() {
 
     do {
         menuBangunDatar();
-        cout << "Pilih : "; cin >> bangunDatar;
+        cout << "Pilih : "; getline(cin, bangunDatar);
 
         // Persegi
         if (bangunDatar == "1" || bangunDatar == "persegi") {
@@ -160,7 +160,7 @@ int main() {
         }
 
         // Persegi Panjang
-        else if (bangunDatar == "2" || bangunDatar == "persegipanjang") {
+        else if (bangunDatar == "2" || bangunDatar == "persegi panjang") {
             menuRumusPersegiPanjang();
             string rumusPersegiPanjang;
             cout << "Pilih : "; cin >> rumusPersegiPanjang;
@@ -254,7 +254,7 @@ int main() {
         }
 
         // Belah Ketupat
-        else if (bangunDatar == "5" || bangunDatar == "belaketupat") {
+        else if (bangunDatar == "5" || bangunDatar == "belah ketupat" || bangunDatar == "belaketupat") {
             menuRumusBelahKetupat();
             string rumusBelahKetupat;
             cout << "Pilih : "; cin >> rumusBelahKetupat;
@@ -322,10 +322,13 @@ int main() {
                 keliling(hasil);
             }
         }
+        
         else {
             salahInput();
         }
+        
         cout << "\nKembali kemenu utama [Y/N] : ";  cin >> ulang;
+        cin.ignore();
     }
     while(ulang == 'Y' || ulang == 'y');
     cout << endl;
