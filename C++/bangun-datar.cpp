@@ -94,12 +94,6 @@ void diagonal(float hasil) {
     cout << "Diagonal yang didapatkan : " << hasil << endl;
 }
 
-void start(char ulang) {
-    cout << "Ingin kembali ke menu?";
-    cout << "Pilih [Y/N]";
-    cin >> ulang;
-}
-
 void salahInput() {
     cout << "Terdapat kesalahan dalam penginputan" << endl;
 }
