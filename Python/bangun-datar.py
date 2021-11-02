@@ -1,9 +1,3 @@
-def menuBangunDatar():
-    print('''===Menu Bangun Datar
-1. Persegi
-2. Persegi Panjang
-3. Lingkaran''')
-
 def persegi():
     print("===Rumus persegi===\n1. Luas\n2. Keliing")
     rumus = int(input("\nPilih rumus : "))
